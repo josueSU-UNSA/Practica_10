@@ -8,21 +8,16 @@ from typing import List
 
 # Practicas de programacion de codigo legible
 
-# ---------------------------------------------------------------
-# 1.Camel Casel 
-# Se toma la nomenclatura Camel Casel
-# ---------------------------------------------------------------
-
 # ------------------------------------------------
 #2.Uso de verbos consistentes tanto en los metodos como en las funciones:  
 ## ------------------------------------------------
-class ListaDeEventos:
+class Lista_de_eventos:
 
     def __init__(self):
         self.size=0
         self.lista=[]
     
-    def agregarEvento(self,nuevoIdEvento):
+    def agregar_evento(self,nuevoIdEvento):
         self.lista.append(nuevoIdEvento)
         self.size+=1
     
@@ -48,27 +43,27 @@ class ListaDeEventos:
 #Se toma un numero magico porque el llenado no 
 # debe ser necesariamente  un numero especifico
 ## ------------------------------------------------
-def llenarListaPrueba(listaObjeto):#Esta funcion nos permitira llenar un objeto Lista de eventos
+def llenar_lista_prueba(listaObjeto):#Esta funcion nos permitira llenar un objeto Lista de eventos
                                       #Con una cantidad consecutiva de numeros 
     
-    numeroDeIteraciones=input("Escriba cuantos numeros se insertaran: ") #->Numero magico
+    numero_de_iteraciones=input("Escriba cuantos numeros se insertaran: ") #->Numero magico
     
-    for i in range(numeroDeIteraciones):
-        listaObjeto.agregarEvento(i)
+    for i in range(numero_de_iteraciones):
+        listaObjeto.agregar_evento(i)
 
 
 
-def introducirIdBuscado():#Esta funcion nos permitira hacer entradas de los
+def introducir_id_buscado():#Esta funcion nos permitira hacer entradas de los
                 # eventos a buscar , asi evitando repeticion
                 # de fragmentos de codigo
 
-    idEntero=input("Ingrese el id del evento: ")
-    return idEntero
+    id_entero=input("Ingrese el id del evento: ")
+    return id_entero
 
-def buscarEvento(listaEventosEntradaIds,idEventoBuscado):
+def buscar_evento(lista_eventos_entrada_ids,id_evento_buscado):
 
-    for i in listaEventosEntradaIds:
-        if(idEventoBuscado==i):
+    for i in lista_eventos_entrada_ids:
+        if(id_evento_buscado==i):
             return True
 
     return False
@@ -84,4 +79,4 @@ def mensaje(bolean_valor):
 # ------------------------------------------------
 #6.Uso de sustantivos en objetos:  
 ## ------------------------------------------------
-listaTest=ListaDeEventos()
+listaTest=Lista_de_eventos()
