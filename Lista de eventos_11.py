@@ -43,13 +43,13 @@ class Lista_de_eventos:
 #Se toma un numero magico porque el llenado no 
 # debe ser necesariamente  un numero especifico
 ## ------------------------------------------------
-def llenar_lista_prueba(listaObjeto):#Esta funcion nos permitira llenar un objeto Lista de eventos
+def llenar_lista_prueba(lista_objeto):#Esta funcion nos permitira llenar un objeto Lista de eventos
                                       #Con una cantidad consecutiva de numeros 
     
     numero_de_iteraciones=input("Escriba cuantos numeros se insertaran: ") #->Numero magico
     
     for i in range(numero_de_iteraciones):
-        listaObjeto.agregar_evento(i)
+        lista_objeto.agregar_evento(i)
 
 
 
